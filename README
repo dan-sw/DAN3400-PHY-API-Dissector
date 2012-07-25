@@ -2,7 +2,7 @@ This is 'DAN3400-PHY-API-Dissector', a wireshark plugin providing
 a dissector for the MAC_PHY API software of the DAN3400  
 DAN3400-PHY-API-Dissector is written in C and runs as part of the wireshark plugins 
 DAN3400-PHY-API-Dissector functionality is described in the 
-project WIKI: https://github.com/dan-sw/PTP_GUI/wiki/DAN3400-PHY-API-Dissector
+project WIKI: https://github.com/dan-sw/DAN3400-PHY-API-Dissector/wiki/DAN3400-PHY-API-Dissector
 
 Refer to LICENSE for DAN3400-PHY-API-Dissector software license. 
 Please send all patches/notes to 
