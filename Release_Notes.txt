@@ -1,0 +1,64 @@
+
+******** New Version 4.10 *************
+1.	Added 'Data Present' indication for PUSCH_EVT
+	(will present only if CRC failures are dissected).
+2.	Messages with missing fragments will display the
+	data received from the first packet.
+******** Previous VERSIONs *************************************************
+
+******** 22.05.08 (4.9) *************
+Added:
+1.	Added CRC data to PUSCH_REQ and n_tb and n_tb_crc to
+	PUSCH_MEAS_EVT, as per API 1.14.a
+2.	All combinations of displaying CRC and SRS are available.
+3.	Fixed filter display of PUSCH_MEAS_EVT fields.
+******** 12.05.08 (4.8) *************
+Added:
+1.	Fixed PDCCH_REQ Format2 and Format1 DCI Payload:
+	Format2: in 3MHz, precoding mistakenly showed only 2 bits
+	Format1: in 20MHz, TPC mistakenly showed only 1 bit
+******** 12.05.03 (4.7) *************
+Added:
+1.	Fixed PUSCH_CTRL_EVT to display in ACK/NACK fields 
+	for MIMO, such that the label indicates whether there
+	ACK for 2nd TB
+******** 12.04.18 (4.6) *************
+Added:
+1.	Fixed PDCCH_REQ Payload to display all 64bits
+	in hex view (in relevant BWs)
+******** 12.04.04 (4.5) *************
+Added:
+1.	Changed display for PDCCH_REQ Payload
+******** 12.03.27 (4.4) *************
+Added:
+1.	Added a checkbox for SRS in the protocol preferences
+******** 12.03.08 (4.3) *************
+Added:
+1.	corrected DCI payload 2 and 2A of PDCCH_REQ: 
+	changed SWAP FLAG field name from counter to swap_flag.
+2.	Fixed srs_present field in PUSCH_REQ
+******** 12.03.05 (4.2) *************
+Added:
+1.	added dissecting of DCI payload (PDCCH_REQ) for all 
+	badwidths (1.4MHz,3MHz,5MHz,10MHz,15MHz,20MHz).
+2.	Fixed SRS_REQ and SRS_EVT
+******** 12.02.09 (4.1) *************
+Added:
+1.	Fixed PUCCH_EVT C2I field. Delta is now 0.5
+******** 12.01.31 (4.0) *************
+Added:
+1.	Aligned to PHY-MAC API V1.14.c
+2.	Added srs_present fields to the PUSCH_REQ and the PUCCH_REQ
+3.	Added dissectors for AIRUL_SRS_REQ and AIRUL_SRS_EVT
+******** 12.01.17 (3.5) *************
+Added:
+1.	Support for DCI Format 2A
+******** 12.01.02 (3.3) *************
+Added:
+1. 	Aligned to fit the changes made in Wireshark
+2. 	Changed the protocol name displayed in Wireshark Preferences
+	to * Dan LTE SDK * (doing so results in the protocol being 
+	placed at the top of the protocol list)
+3.	Fixed some typos in the field names
+4.	Changed the displayed values of fields such as RSSI, C2I and 
+	Timing Offset to fit the logical range defined in the API.
